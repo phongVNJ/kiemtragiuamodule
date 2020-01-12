@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tuổi</title>
+    <script>
+        let a; // năm sinh
+        let tuoi= 0;
+        function tinhtuoi() {
+            a = document.getElementById("namsinh").value;
+            if (a<2020){
+                tuoi = 2020 - a;
+                document.getElementById("result").innerHTML= "số tuổi là:" + tuoi+ "tuổi";
+            }
+            else {
+                alert("không hợp lệ");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="namsinh" value="">
+<input type="button" value="tinh tuoi" onclick="tinhtuoi()">
+<div id="result"></div>
+</body>
+</html>
