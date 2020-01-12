@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng số lẻ trong mảng</title>
+</head>
+<body>
+<script>
+    let array = [1,2,3,4,5,6,7,8,9,10]
+    let total = 0;
+    function tongsole(array) {
+        for (let i = 0;i <array.length;i++){
+            if (array[i] % 2 !=0){
+                total += array[i];
+    }
+        }
+        return total;
+    }
+    document.write("tổng số lẻ trong mảng là:"+ tongsole(array));
+</script>
+</body>
+</html>
